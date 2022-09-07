@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+}
+
+body{
+    background-image: url(asset/sincerely-media-7ZXx3JofFVY-unsplash.jpg);
+    background-repeat: repeat;
+  
+    
+}
+
+.logo{
+    color:white;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#brand{
+    bottom: 20px;
+    right: 90px;
+    position: relative;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+.logo>img{
+    
+    margin-right: 30px;
+    width: 9%;
+}
+
+
+
+
+nav{
+  background-color: red;
+}
+
+.menu{
+    padding-bottom: 9px;
+    margin-top: -50px;
+}
+
+.menu>li>a{
+    background-color: deeppink;
+    font-weight: lighter;
+    color: white;
+    font-weight: 500;
+    border: 1px solid;
+    display: flex;
+    padding: 6px;
+    justify-content: space-between; 
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.menu>li{
+    list-style: none;
+}
+
+.menu li a:hover{
+    border: 1px solid black;
+    transition: ease-in-out 1s;
+    background-color:rgba(20, 20, 20, 0.285);
+}
+
+.menu{
+  display: flex;
+    justify-content: center;
+}
+
+nav>.menu>li:hover{
+    background-color: black;
+    transition: ease-in-out 0.2s;
+    
+}
+
+#dropdown{
+    display: none;
+    list-style: none;
+}
+
+nav ul li:hover #dropdown{
+    display: block;
+    background-color:rgba(245, 253, 245,0.20,);
+    position: absolute;
+    color: white;
+    
+}
+
+#dropdown  li a:hover{
+    transition: ease-in 0.2s;
+    background-color: deeppink;
+    color: white;
+    text-decoration: none;
+    border: 1px solid;
+    
+}
+
+#dropdown  li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+/* nav selesai */
+
+
+.f-photo{
+    background-image: url(asset/pink\ bg.jpg);
+    color: white;
+    font-weight: 800;
+    
+    padding: 20px;
+    margin-bottom: 30px;
+    justify-content: center;
+    text-align: center;
+    min-height: 400px;
+}
+.f-photo>p{
+    margin-top: 40px;
+    line-height: 40px;
+}
+
+.f-photo>h1{
+    margin-top: 20px;
+}
+/* done */
+
+
+
+.f-image{
+    width: min(1200px,100%);
+    padding: 33px;
+    display:flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    cursor: pointer;
+    justify-content: space-between;
+ 
+}
+
+
+.photo{
+    width: calc(33% - 10px);
+    overflow: hidden;
+    margin-top: -64px;
+    margin-left: -30px;
+}
+
+.photo-1{
+    width: 385px;
+    border-radius: 6px;
+    transition: 0,3s linear;
+    margin-top: 2px;
+}
+
+.photo-2{
+    margin-top: 2px;
+    width: 450px;
+    border-radius: 6px;
+    transition: 0,3s linear;    
+    
+}
+
+.photo-3{
+    margin-top: 2px;
+    width: 390px;
+    border-radius: 6px;
+    transition: 0,3s linear;
+}
+
+
+
+.photo-conten{
+    opacity: 0.9;
+    background-color: #ffffffde;
+    backdrop-filter: blur(5px);
+    padding: 6px;
+    border-radius: 6px;
+    transform: translateY(-60px);
+    transition: 0.3s linear;
+}
+
+.photo-conten>h3{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+.date{
+    font-size: 15px;
+    font-style: italic;
+}
+
+.photo:hover>img{
+    transform: translateY(20px);
+}
+
+.photo:hover>.photo-conten{
+    transform: translateY(-80px);
+}
+
+@media screen and (max-width: 1200px) {
+    .f-photo{
+        justify-content: center;
+    }  
+    .photo{
+        width: min-content(600px , 100%);
+    }
+}
+
+
+
+
+.sc-media{
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.sc-media ul li{
+    background-color: magenta;
+    list-style: none;
+    border: 1px solid black;
+    color: white;
+}
+
+
+
+.sc-media ul li a{
+    color: white;
+    font-weight: lighter;
+    border: 1px solid;
+    display: flex;
+    padding: 6px;
+    justify-content: space-between; 
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.drop-down{
+    display: none;
+    list-style: none;
+}
+
+.sc-media li:hover .drop-down{
+    display: block;
+}
+
+
+.drop-down li:hover{
+    transition: ease-in-out 0.5s;
+    background-color:crimson;
+}
+
+.sc-media .li:hover{
+background-color: crimson;
+transition: ease-in-out 1s;
+}
+
+footer{
+    background-color: rgba(35, 32, 32, 0.842);
+    border-top: 1px dashed black;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-weight: lighter;
+    
+}
+
+
+footer a img{
+    justify-content: center;
+    text-align: center;
+}
+footer .footer-media .img-1{
+    width: 6%;
+}
+
+footer .footer-media .img-2{
+    width: 5%;
+    margin-top: 25px;
+}
+
+footer .footer-media .img-3{
+    width: 5%;
+    margin-bottom: 9px;
+}
+
+footer .footer-media .img-2:hover{
+    transform: translateY(-10px);
+    transition: ease-in-out 1s;
+}
+
+footer .footer-media .img-1:hover {
+    transform: translateY(-10px);
+    transition: ease-in-out 1s;
+}
+
+footer .footer-media .img-3:hover {
+    transform: translateY(-10px);
+    transition: ease-in-out 1s;
+}
+
